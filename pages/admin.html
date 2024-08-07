@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>index</title>
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- -----side menu start----- -->
+        <%- include('./layout/sideMenu'); -%>
+            <!-- -----side menu end----- -->
+            <!-- -----main section start----- -->
+            <section class="main w-100">
+                <div class="container">
+                    <!-- header -->
+                    <div class="d-flex justify-content-between">
+                        <!-- title group -->
+                        <div class="title-group d-flex">
+                            <h2 class="me-5">Assignment</h2>
+                            <div class="dropdown">
+                                
+                                <button type="button">
+                                    <span class="material-symbols-outlined me-2">
+                                        add
+                                    </span>Add New Admin</button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- tools -->
+                        <div class="d-flex">
+                            <button type="button" class="tool-btn me-4">
+                                <span class="material-symbols-outlined">
+                                    search
+                                </span>
+                            </button>
+                            <button type="button" class="tool-btn">
+                                <span class="material-symbols-outlined">
+                                    notifications_active
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- content -->
+
+
+            </section>
+            <!-- -----main section end----- -->
+    </div>
+
+
+
+    <script type="module" src="../main.js"></script>
+</body>
+
+</html>

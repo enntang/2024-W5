@@ -34,7 +34,7 @@
                 line-height: 1;
                 display: inline-block;
                 width: 100%;
-                font-weight: 600;
+                // font-weight: 600;
             }
             &.active::before ,&:hover::before{
                 content: '';

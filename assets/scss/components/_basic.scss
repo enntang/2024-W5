@@ -36,7 +36,7 @@ p.caption {
     }
 }
 
-.dropdown button,
+.title-group .dropdown button,
 .accordion-item:first-of-type>.accordion-header .accordion-button {
 
     display: flex;
@@ -53,7 +53,6 @@ p.caption {
     span {
         width: 24px;
         height: 24px;
-        margin-left: 9px;
         color: $success;
     }
 
