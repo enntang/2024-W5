@@ -21,9 +21,9 @@
                     <div class="d-flex justify-content-between">
                         <!-- title group -->
                         <div class="title-group d-flex">
-                            <h2 class="me-5">Assignment</h2>
+                            <h2 class="me-5">Admin</h2>
                             <div class="dropdown">
-                                
+
                                 <button type="button">
                                     <span class="material-symbols-outlined me-2">
                                         add
@@ -50,10 +50,101 @@
                         </div>
                     </div>
                     <!-- content -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">ID<span class="material-icons">
+                                        arrow_downward
+                                    </span></th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Verified</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">#1</th>
+                                <td>Emir Wicks</td>
+                                <td>emir.wicks@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <div class="d-flex">
+                                        <button type="button" class="tool-btn me-4" data-bs-toggle="modal"
+                                        data-bs-target="#previewAdmin">
+                                            <span class="material-icons">
+                                                visibility
+                                            </span>
+                                        </button>
+                                        <button type="button" class="tool-btn" data-bs-toggle="modal"
+                                            data-bs-target="#editAdmin">
+                                            <span class="material-symbols-outlined">
+                                                edit
+                                            </span>
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
 
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
 
             </section>
             <!-- -----main section end----- -->
+
+            <!-- modal -->
+
+            <!-- Modal: Preview Admin-->
+            <div class="modal fade" id="previewAdmin" tabindex="-1" aria-labelledby="previewAdminLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="previewAdminLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           Preview
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal: Edit Admin-->
+            <div class="modal fade" id="editAdmin" tabindex="-1" aria-labelledby="editAdminLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="editAdminLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Edit
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 
 
