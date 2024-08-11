@@ -68,3 +68,58 @@ p.caption {
     width: 24px;
     height: 24px;
 }
+
+// table
+.table {
+    margin-bottom: 64px;
+
+    * {
+        vertical-align: middle;
+    }
+
+    thead tr {
+        border-bottom: 1px solid $gray-900;
+
+        th {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+    }
+
+    tbody td {
+        padding: 16px 8px;
+    }
+
+}
+
+// pagination
+ul.pagination {
+
+    .page-item {
+        width: 32px;
+        height: 32px;
+
+
+        .page-link {
+            border: $success 1px solid;
+            line-height: 1;
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $gray-900;
+        }
+        &:first-child .page-link{
+            border-radius:  2px 0 0 2px;
+        }
+        &:last-child .page-link{
+            border-radius:   0 2px 2px 0;
+        }
+        &.active .page-link{
+            background-color: $success;
+           color:white;
+        }
+    }
+}
