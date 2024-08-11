@@ -1,0 +1,128 @@
+.modal-dialog.basic {
+    // padding: 32px;
+    background-color: transparent;
+    position: relative;
+
+
+    .modal-header,
+    .modal-body,
+    .modal-footer {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .modal-header {
+        border: 0;
+        padding-top: 32px;
+
+    }
+
+    .btn-close {
+        position: absolute;
+        right: 32px;
+        top: 32px;
+    }
+
+    img.avatar {
+        width: 140px;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .modal-content {
+        border-radius: 0;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    hr {
+        margin: 20px 0;
+    }
+
+    .email {
+        font-size: 14px;
+        color: $gray-600;
+        font-weight: 300;
+    }
+
+    .tag {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    input,
+    button {
+        border-radius: 2px;
+
+    }
+
+    input:read-only {
+        background-color: $gray-100;
+        border: 0;
+    }
+
+    button.disabled {
+        color: $gray-400;
+    }
+
+    .subtitle {
+        font-size: 20px;
+        margin-bottom: 16px;
+        font-weight: 600;
+    }
+
+    .verification {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 18px;
+
+        p {
+            display: flex;
+        }
+
+        time {
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+
+    .btn:hover,
+    .btn-check:checked+.btn,
+    :not(.btn-check)+.btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        color: initial
+    }
+
+    ul.dropdown-menu {
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    .form-check {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 16px;
+
+        input {
+            width: 20px;
+            height: 20px;
+            border: 2px solid $dark;
+            margin-right: 8px;
+            position: absolute;
+            top: -2px;
+            background-color: transparent;
+        }
+
+        label {
+            margin-left: 8px;
+        }
+    }
+}
